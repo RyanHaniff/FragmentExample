@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         firstFragment.setArguments(getIntent().getExtras());
 
         //for the getSupportFragmentManager to work the fragment object that your are repalcing the
-        //frame layou with must import the: import android.support.v4.app.Fragment;
+        //frame layout with must import the: import android.support.v4.app.Fragment;
         //if not you will get an error saying it cannot resolve the method add()
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_one, firstFragment).commit();
 
